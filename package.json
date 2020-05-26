@@ -1,0 +1,22 @@
+{
+  "name": "techtalk-pwa-sample",
+  "version": "1.0.0",
+  "description": "PWA example built for TechTalk demo session",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 8081"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateuszhoffman/techtalk-pwa-sample.git"
+  },
+  "author": "Mateusz Hoffman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mateuszhoffman/techtalk-pwa-sample/issues"
+  },
+  "homepage": "https://github.com/mateuszhoffman/techtalk-pwa-sample#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}

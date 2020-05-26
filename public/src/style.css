@@ -1,0 +1,47 @@
+body {
+  background: #f1f1f1;
+  padding-top: 2rem;
+  font-family: Montserrat, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  box-shadow: 1px 1px 0 lightgrey;
+}
+
+.app {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .app {
+    width: 60%;
+  }
+}
+
+div#item-container {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  margin-bottom: 8px;
+  padding: 1em;
+  box-shadow: 1px 1px 0 lightgrey;
+  transition: transform 250ms ease-in-out;
+}
+
+div#item-container:hover {
+  transform: scale(1.03);
+}
+.desc {
+  margin-top: 2rem;
+  line-height: 1.5rem;
+}
+
+.left {
+  padding-right: 1rem;
+}
+
+.right {
+  color: #af1111;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <title>Progressive Web Apps sample</title>
+  <body>
+    <div class="app">
+      <h2>Tech Talk Schedule:</h2>
+      <div id="item-container">
+        <span class="left"
+          >👱
+          <strong>J. Doe</strong>
+          - "How to stay anonymous?"</span
+        >
+        <span class="right">May 19th</span>
+      </div>
+      <div id="item-container">
+        <span class="left"
+          >👱‍♀️
+          <strong>
+            A. Grande
+          </strong>
+          - "Iterators - thank u, next"</span
+        >
+        <span class="right">May 26th</span>
+      </div>
+      <div id="item-container">
+        <span class="left"
+          >🧔
+          <strong>
+            L. D. Caprio
+          </strong>
+          - "Cold path - history of Titanic"</span
+        >
+        <span class="right">June 2nd</span>
+      </div>
+      <p class="desc">
+        <strong>“Tech Talks” by Unicorns</strong> - expand your technical skills
+        growth with short talks (around 30 minutes) as a sneak peak of trending
+        technologies/frameworks or software development approaches. Every talk
+        is dedicated to wide audience – for those who doesn’t have any
+        experience presented IT area but also for those who have.
+      </p>
+      <img src="src/img/banner-tt.jpg" alt="Photo of presenter on the stage" />
+    </div>
+  </body>
+  <script>
+    //Is it available? Check: https://jakearchibald.github.io/isserviceworkerready/
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js");
+    }
+  </script>
+</html>
